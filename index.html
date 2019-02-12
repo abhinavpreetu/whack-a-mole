@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Whack a bug</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Whack-A-Bug</h1>
+            <div class="final-score hide">
+                <p class="score">Your score: <span id="finalScore"></span></p>
+                <p class="score">High score: <span id="highScore"></span></p>
+            </div>
+            <div class="diff-level">
+                <p>Select Difficulty level:</p>
+                <input type="radio" name="level" checked="checked" onclick="setDifficulty(event)" value="easy">Easy
+                <input type="radio" name="level" onclick="setDifficulty(event)" value="medium">Medium
+                <input type="radio" name="level" onclick="setDifficulty(event)" value="hard">Hard
+            </div>
+            <button class="begin-btn" onclick="startGame(event)">Let's Whack</button>
+            <div class="playground hide">
+                <div class="scoreboard">
+                    Your Score: <span id="score">0</span>
+                    <p class="streak">Streak: <span id="streak"></span></p>
+                </div>
+                <div class="game">
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                    <div class="dirt" onclick="dirtClickHandler(event)">
+                        <img class="mole" src="./assets/mole.png" alt="mole image">
+                        <img src="./assets/dirt.svg" class="dirt-img" alt="dirt image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
